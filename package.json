@@ -1,0 +1,52 @@
+{
+  "name": "shortr",
+  "version": "1.0.0",
+  "description": "A brief url shortner, for fun",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "tap",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregdaynes/shortr.git"
+  },
+  "author": "Gregory Daynes <gregdaynes@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregdaynes/shortr/issues"
+  },
+  "homepage": "https://github.com/gregdaynes/shortr#readme",
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2",
+    "tap": "^15.0.9"
+  },
+  "type": "module",
+  "tap": {
+    "node-arg": [
+      "--no-warnings",
+      "--experimental-loader",
+      "@istanbuljs/esm-loader-hook"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 12
+    },
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "rules": {}
+  },
+  "prettier": {
+    "semi": false
+  },
+  "dependencies": {
+    "fastify": "^3.19.1"
+  }
+}
